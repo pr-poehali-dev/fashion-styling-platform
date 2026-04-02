@@ -13,9 +13,9 @@ export default {
     container: { center: true, padding: '2rem', screens: { '2xl': '1400px' } },
     extend: {
       fontFamily: {
-        bebas: ['Bebas Neue', 'sans-serif'],
-        oswald: ['Oswald', 'sans-serif'],
-        golos: ['Golos Text', 'sans-serif'],
+        playfair: ['Playfair Display', 'serif'],
+        pacifico: ['Pacifico', 'cursive'],
+        nunito: ['Nunito', 'sans-serif'],
       },
       colors: {
         border: 'hsl(var(--border))',
@@ -23,7 +23,12 @@ export default {
         ring: 'hsl(var(--ring))',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
-        neon: 'hsl(55 100% 50%)',
+        pink: {
+          blush: 'hsl(340 62% 68%)',
+          light: 'hsl(340 60% 93%)',
+          pale: 'hsl(345 70% 96%)',
+          deep: 'hsl(330 45% 58%)',
+        },
         primary: {
           DEFAULT: 'hsl(var(--primary))',
           foreground: 'hsl(var(--primary-foreground))'
@@ -64,7 +69,9 @@ export default {
         }
       },
       borderRadius: {
-        lg: '0px', md: '0px', sm: '0px',
+        lg: 'var(--radius)',
+        md: 'calc(var(--radius) - 2px)',
+        sm: 'calc(var(--radius) - 4px)',
       },
       keyframes: {
         'accordion-down': {
