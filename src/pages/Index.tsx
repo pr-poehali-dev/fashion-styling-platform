@@ -48,7 +48,7 @@ const looks = [
     title: "Власть акцента",
     event: "Коктейль / Презентация",
     season: "Всесезонный",
-    style: "Avant-garde",
+    style: "Авангард",
     items: ["Чёрный структурированный жакет", "Массивные золотые серьги", "Тёмная помада"],
     tag: "СИЛА",
   },
@@ -59,8 +59,8 @@ const looks = [
     event: "Повседневный",
     season: "Универсальный",
     style: "Базовый",
-    items: ["Cashmere turtleneck", "Camel coat", "Wide trousers"],
-    tag: "CAPSULE",
+    items: ["Кашемировая водолазка", "Бежевое пальто", "Широкие брюки"],
+    tag: "КАПСУЛА",
   },
   {
     id: 7,
@@ -68,9 +68,9 @@ const looks = [
     title: "Молочный нейтрал",
     event: "Прогулка / Встреча",
     season: "Весна / Лето",
-    style: "Soft minimal",
-    items: ["Cream knit sweater", "Ecru wide-leg pants", "Gold chain necklace"],
-    tag: "STREET",
+    style: "Мягкий минимализм",
+    items: ["Кремовый вязаный свитер", "Брюки цвета экрю", "Золотая цепочка"],
+    tag: "УЛИЦА",
   },
   {
     id: 8,
@@ -78,9 +78,9 @@ const looks = [
     title: "Кожаный силуэт",
     event: "Ужин / Выход",
     season: "Осень / Зима",
-    style: "Sleek power",
-    items: ["Black turtleneck", "Leather midi skirt", "Pointed heels", "Clutch"],
-    tag: "EVENING",
+    style: "Элегантная сила",
+    items: ["Чёрная водолазка", "Кожаная юбка-миди", "Туфли с острым носом", "Клатч"],
+    tag: "ВЕЧЕР",
   },
   {
     id: 9,
@@ -88,9 +88,9 @@ const looks = [
     title: "Серый костюм",
     event: "Переговоры / Офис",
     season: "Всесезонный",
-    style: "Tailored luxury",
-    items: ["Double-breasted grey suit", "Silk shirt", "Minimal accessories"],
-    tag: "OFFICE",
+    style: "Строгая роскошь",
+    items: ["Двубортный серый костюм", "Шёлковая рубашка", "Минимум аксессуаров"],
+    tag: "ОФИС",
   },
   {
     id: 10,
@@ -98,9 +98,9 @@ const looks = [
     title: "Белое платье",
     event: "Обед / Лёгкий выход",
     season: "Лето",
-    style: "Clean elegance",
-    items: ["White shirt dress", "Nude heels", "Gold hoop earrings", "Belt"],
-    tag: "EDITORIAL",
+    style: "Чистая элегантность",
+    items: ["Белое платье-рубашка", "Бежевые туфли", "Золотые серьги-кольца", "Пояс"],
+    tag: "РЕДАКЦИЯ",
   },
   {
     id: 11,
@@ -108,9 +108,9 @@ const looks = [
     title: "Асимметрия",
     event: "Прогулка / Кино",
     season: "Осень",
-    style: "Parisian effortless",
-    items: ["Wrap coat", "Black trousers", "White sneakers"],
-    tag: "STREET",
+    style: "Парижская небрежность",
+    items: ["Пальто запашное", "Чёрные брюки", "Белые кеды"],
+    tag: "УЛИЦА",
   },
   {
     id: 12,
@@ -118,13 +118,13 @@ const looks = [
     title: "Шёлковое утро",
     event: "Дома / Будуар",
     season: "Всесезонный",
-    style: "Intimate luxury",
-    items: ["Ivory silk slip dress", "Bare skin", "Delicate jewellery"],
-    tag: "EVENING",
+    style: "Интимная роскошь",
+    items: ["Шёлковое платье-комбинация цвета слоновой кости", "Открытая кожа", "Нежные украшения"],
+    tag: "ВЕЧЕР",
   },
 ];
 
-const filters = ["Все", "EDITORIAL", "STREET", "EVENING", "OFFICE", "POWER", "CAPSULE"];
+const filters = ["Все", "РЕДАКЦИЯ", "УЛИЦА", "ВЕЧЕР", "ОФИС", "СИЛА", "КАПСУЛА"];
 const navItems = ["Образы", "Гардероб", "Стилист", "Обо мне"];
 
 type WardrobeItem = {
@@ -142,7 +142,7 @@ const defaultWardrobe: WardrobeItem[] = [
   { id: 1, name: "Чёрный блейзер", category: "Верх", color: "Чёрный", note: "Классика, носится с чем угодно" },
   { id: 2, name: "Белая шёлковая блуза", category: "Верх", color: "Белый", note: "Для особых случаев" },
   { id: 3, name: "Бежевое пальто", category: "Верхняя одежда", color: "Бежевый", note: "Осень/весна, оверсайз" },
-  { id: 4, name: "Чёрные tailored брюки", category: "Низ", color: "Чёрный", note: "Капсульная вещь" },
+  { id: 4, name: "Чёрные прямые брюки", category: "Низ", color: "Чёрный", note: "Капсульная вещь" },
   { id: 5, name: "Кашемировый водолазка", category: "Верх", color: "Серый", note: "Носить с юбкой или брюками" },
   { id: 6, name: "Белое платье-миди", category: "Платье", color: "Белый", note: "На лето и вечеринки" },
 ];
